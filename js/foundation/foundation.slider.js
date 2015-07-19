@@ -60,6 +60,7 @@
         });
 
       self.S(window)
+        .off('resize.fndtn.slider')
         .on('resize.fndtn.slider', self.throttle(function (e) {
           self.reflow();
         }, 300));
